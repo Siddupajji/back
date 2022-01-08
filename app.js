@@ -11,7 +11,7 @@ app.use(cors({ origin: "*" }));
 app.use(express.json());
 app.use(cors({ credentials: true, origin: true }));
 
-app.post("/sendmail", (req, res) => {
+app.post("https://truthful-furtive-kilometer.glitch.me/sendmail", (req, res) => {
     let userdata = req.body;
 
     console.log(userdata);
